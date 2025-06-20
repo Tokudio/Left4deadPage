@@ -1,0 +1,483 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    color: #A9A9A9; /* Chữ xám nhạt cho mặc định */
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 70px;
+    background: #1C2526; /* Nền đen đậm */
+}
+
+.Img {
+    position: absolute;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.logo h1 {
+    margin-top: 10px;
+    position: relative;
+    margin-left: 70px;
+    font-size: 25px;
+    font-family: Creepster, sans-serif;
+    color: #FF4040; /* Đỏ nhạt */
+    text-shadow: 2px 2px 2px #000; /* Bóng đen */
+}
+
+.navigation-bar {
+    margin-right: 100px;
+}
+
+.navigation-bar a {
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3; /* Trắng xám */
+    font-weight: bold;
+}
+
+.navigation-bar a:hover {
+    text-decoration: underline;
+    color: #FF0000; /* Đỏ sáng */
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down button {
+    width: 100px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    padding-top: 10px;
+    background: #B22222; /* Đỏ máu */
+}
+
+.drop-down .drop-menu {
+    display: none;
+    position: absolute;
+    width: 100px;
+    border-radius: 15px;
+    background: #1C2526; /* Đen đậm */
+}
+
+.drop-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    width: 100px;
+    margin-top: 10px;
+    font-family: Poppins, sans-serif;
+    margin-right: 10px;
+    color: #D3D3D3; /* Trắng xám */
+    font-size: 17px;
+}
+
+.drop-down a:hover {
+    background-color: #FF4500; /* Cam cháy */
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.drop-down:hover .drop-menu {
+    display: block;
+}
+
+.section-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1400px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #B22222; /* Viền đỏ máu */
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.8); /* Đen mờ */
+}
+
+.section-text {
+    flex: 50%;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+.section-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-family: Creepster, sans-serif;
+    color: #FF4040; /* Đỏ nhạt */
+    text-shadow: 2px 2px 2px #000;
+}
+
+.section-text p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3; /* Trắng xám */
+}
+
+.section-text button {
+    width: 140px;
+    font-size: 22px;
+    border-radius: 5px;
+    border: 1px solid #B22222; /* Viền đỏ máu */
+    padding: 3px;
+    cursor: pointer;
+    transition: transform .5s;
+    margin-top: 40px;
+    font-family: Creepster, sans-serif;
+    background: #8B0000; /* Đỏ đậm */
+    color: #FFF;
+}
+
+.section-text button:hover {
+    transform: translateY(-5px);
+    background: #FF0000; /* Đỏ sáng */
+    color: #FFF;
+}
+
+.section-text .link {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link p {
+    margin-top: 20px;
+    font-family: Poppins, sans-serif;
+    color: #A9A9A9;
+}
+
+.link a {
+    margin: 0;
+    margin-right: 100px;
+    transition: transform .5s;
+}
+
+.link a:hover {
+    transform: translateY(-5px);
+}
+
+.section-img {
+    flex: 50%;
+}
+
+.menu-content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "item1 item2 item3 item4";
+    margin-bottom: 100px;
+}
+
+.menu-content .header-content {
+    grid-area: header;
+    margin-bottom: 50px;
+}
+
+.header-content h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: Creepster, sans-serif;
+    color: #FF4040;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.menu-content .content-1 { grid-area: item1; }
+.menu-content .content-2 { grid-area: item2; }
+.menu-content .content-3 { grid-area: item3; }
+.menu-content .content-4 { grid-area: item4; }
+
+.content-1, .content-2, .content-3, .content-4 {
+    text-align: center;
+    border: 1px solid #B22222; /* Viền đỏ máu */
+    width: 200px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(#8B0000, #1C2526); /* Đỏ đậm sang đen */
+    transition: transform .5s;
+    box-shadow: 0 0 10px rgba(255, 64, 64, 0.5); /* Ánh đỏ */
+}
+
+.content-1:hover, .content-2:hover, .content-3:hover, .content-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.content-1 a, .content-2 a, .content-3 a, .content-4 a {
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3;
+}
+
+.content-1 a:hover, .content-2 a:hover, .content-3 a:hover, .content-4 a:hover {
+    color: #FF0000; /* Đỏ sáng */
+}
+
+.container-slide {
+    margin-top: 100px;
+    background: linear-gradient(#8B0000, #1C2526); /* Đỏ đậm sang đen */
+    width: 1700px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 64, 64, 0.5);
+}
+
+.logo-slide {
+    text-align: center;
+}
+
+.logo-slide h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: Creepster, sans-serif;
+    color: #FF4040;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.overflow-slider {
+    overflow: hidden;
+}
+
+.slider {
+    width: calc(200px * 8);
+    display: flex;
+    animation: slide 20s linear infinite;
+}
+
+.slide {
+    text-align: center;
+}
+
+.slide img {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border: 2px solid #B22222; /* Viền đỏ máu */
+}
+
+.slide p {
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-500px); }
+}
+
+.section-footer {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+        "logo item1 item2";
+    background: #1C2526; /* Đen đậm */
+}
+
+.logo-footer {
+    grid-area: logo;
+}
+
+.logo-footer p {
+    margin-top: 40px;
+    padding: 15px;
+    font-family: Poppins, sans-serif;
+    color: #FF4040; /* Đỏ nhạt */
+}
+
+.footer-1 {
+    grid-area: item1;
+}
+
+.footer-1 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #D3D3D3;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.footer-2 {
+    grid-area: item2;
+}
+
+.footer-2 a {
+    display: block;
+    padding: 10px;
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+.footer-1 a:hover, .footer-2 a:hover {
+    color: #FF0000; /* Đỏ sáng */
+}
+
+.container-form {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Đen mờ */
+}
+
+.container-form .form {
+    width: 450px;
+    background: #8B0000; /* Đỏ máu đậm */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 64, 64, 0.5);
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Creepster, sans-serif;
+    color: #FF4040;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.input-box {
+    width: 100%;
+    height: 100%;
+}
+
+.input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #1C2526; /* Đen đậm */
+    border: 1px solid #B22222; /* Viền đỏ */
+    color: #D3D3D3;
+    font-family: Poppins, sans-serif;
+}
+
+.input-box input::placeholder {
+    color: #A9A9A9; /* Xám nhạt */
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #FF0000; /* Đỏ sáng */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me label {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3;
+}
+
+.remember-me a {
+    text-decoration: none;
+    color: #FF4040; /* Đỏ nhạt */
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+}
+
+.remember-me a:hover {
+    color: #FF0000; /* Đỏ sáng */
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    width: 110px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px;
+    background: #B22222; /* Đỏ máu */
+    color: #FFF;
+    font-family: Creepster, sans-serif;
+    border: none;
+    transition: transform .5s, background .3s;
+}
+
+.btn button:hover {
+    background: #FF0000; /* Đỏ sáng */
+    transform: scale(1.1);
+}
+
+.register {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register p {
+    font-family: Poppins, sans-serif;
+    color: #D3D3D3;
+}
+
+.register a {
+    text-decoration: none;
+    color: #FF4040;
+    font-family: Poppins, sans-serif;
+}
+
+.register a:hover {
+    color: #FF0000;
+}
+
+.close-btn {
+    position: absolute;
+}
+
+.close-btn button {
+    margin-left: 380px;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #1C2526; /* Đen */
+    color: #FF4040; /* Đỏ nhạt */
+    border: 1px solid #B22222;
+    font-family: Creepster, sans-serif;
+}
+
+.close-btn button:hover {
+    background: #FF0000; /* Đỏ sáng */
+    color: #FFF;
+}
